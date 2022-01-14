@@ -8,7 +8,17 @@
         </button>
         <div class="collapse navbar-collapse text-center justify-content-end" id="navbar2SupportedContent">
             <ul class="navbar-nav">
-
+                <?php if(!empty($_SESSION["Session_admin"])) {
+                ?>
+                <li class="nav-item h6 mr-5">
+                  <a class="nav-link" href="../controller/client.controller.php?action=clients" style="color: black;">
+                    <i class="fas fa-portrait"></i>
+                       Mes clients 
+                   </a>
+                </li>
+                <?php
+                }
+                ?>
                <li class="nav-item h6 mr-5">
                   <a class="nav-link" href="../controller/book.controller.php?action=book_history&id_user=<?= $_SESSION["Session_1"][0]["id"];?>" style="color: black;">
                     <i class="fas fa-history"></i>

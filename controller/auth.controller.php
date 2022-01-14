@@ -29,6 +29,9 @@ function checkAccess($mysqlConnection) {
             $logged = 1;
             $_SESSION["Session_".$logged] = $result;
             $_SESSION["Session_logged"] = "yes"; 
+            if($email == "admin@srv-admin.com") {
+                $_SESSION["Session_admin"] = "yes";
+            }
             header("location: ../view/index.php");
         }else{
             header("location: ../view/auth.php");
