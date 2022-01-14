@@ -20,7 +20,7 @@ if (!empty($_SESSION)){
                         
                     </div>
                     <div class="col-md-4" style="width: 40%;">
-                        <form action="/BDD/controller/auth.controller.php?action=auth" method="POST">
+                        <form action="../controller/auth.controller.php?action=auth" method="POST">
                             <div class="mb-3">
                                 <label for="exampleInputEmail1" class="form-label">Adresse email :</label>
                                 <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="email" required>
@@ -36,7 +36,7 @@ if (!empty($_SESSION)){
                                     <input type="submit" class="btn btn-dark" name="connexion" value="connexion">
                                 </div>
                                 <div class="col-md-auto">
-                                <a href="/BDD/view/inscription.php">Ouvrir un compte</a>
+                                <a href="../view/inscription.php">Ouvrir un compte</a>
                                 </div>
                             </div>
                             

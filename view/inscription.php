@@ -22,7 +22,7 @@ if (!empty($_SESSION)){
                         
                     </div>
                     <div class="col-md-4" style="width: 50%;">
-                        <form action="/BDD/controller/auth.controller.php?action=inscription" method="POST">
+                        <form action="../controller/auth.controller.php?action=inscription" method="POST">
                             <div class="mb-3">
                                 <label for="name" class="form-label">Nom :</label>
                                 <input type="text" class="form-control" id="name" aria-describedby="name" name="name" required>
@@ -48,7 +48,7 @@ if (!empty($_SESSION)){
                                     <input type="submit" class="btn btn-dark" name="inscription" value="inscription">
                                 </div>
                                 <div class="col-md-auto">
-                                    <a href="/BDD/view/auth.php">J'ai déja un compte</a>
+                                    <a href="../view/auth.php">J'ai déja un compte</a>
                                 </div>
                             </div>
                             

@@ -39,7 +39,7 @@ function checkAccess($mysqlConnection) {
 function disconnect() {
     $_SESSION["Session_logged"] = "no";
     session_destroy();
-    header("location:/BDD/view/auth.php");
+    header("location: ../view/auth.php");
 
 }
 

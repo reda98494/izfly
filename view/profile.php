@@ -10,7 +10,7 @@ require_once "../controller/profile.controller.php";
 ?>
 
 <div class="container mt-5 mb-5 col-md-5">
-    <form action="/BDD/controller/profile.controller.php?action=update&id=<?= $_SESSION["Session_1"][0]["id"];?>" method="POST">
+    <form action="../controller/profile.controller.php?action=update&id=<?= $_SESSION["Session_1"][0]["id"];?>" method="POST">
     <div class="mb-3">
         <label for="name" class="form-label">Nom :</label>
         <input type="text" class="form-control" id="name" aria-describedby="name" name="name" value="<?= $row["nom"] ?>" required>
